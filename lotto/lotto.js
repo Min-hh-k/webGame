@@ -7,3 +7,6 @@ while (candidate.length > 0) {
   shuffle.push(value);
 }
 console.log(shuffle);
+const winBalls = shuffle.slice(0,6).sort((a,b)=> a - b);
+const bonus = shuffle[6]; //배열 6이 7번ㅉ
+console.log(winBalls, bonus);
