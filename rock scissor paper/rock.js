@@ -54,7 +54,7 @@ const clickButton = () => {
     const computerScore = scoreTable[computerChoice];
     const diff = myScore - computerScore;
     let message;
-    if ([2, -1].includes(diff)) {
+    if ([2, -1].includes(diff)) { // = diff === 2 \\ diff === -1 ; console.log('승리');
       score += 1;
       message = '승리';
     } else if ([-2, 1].includes(diff)) {
